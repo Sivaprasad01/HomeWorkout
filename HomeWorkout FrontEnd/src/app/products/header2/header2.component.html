@@ -1,0 +1,26 @@
+ <!-- Navigation-->
+ <nav class="navbar headerr navbar-expand-lg navbar-light">
+    <div class="container px-4 px-lg-5 ">
+        <!-- <a class="navbar-brand text-light fs-2" routerLink="/"><i class="fa-sharp fa-solid fa-wand-magic-sparkles text-info fs-2"></i> EnchantiquE</a> -->
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-sharp fa-solid fa-bars text-light"></i><span class="navbar-toggler-icon m-0"></span></button>
+        <div class=" navbar-collapse" id="navbarSupportedContent">
+            <ul  class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <input (keyup)="search($event)" type="text"  placeholder="Search for products" class="form-control">
+                <!--(keyup)="search($event)"  -->
+            </ul>
+            <form class="d-flex" style="float: right;">
+                <!-- wishlist  -->
+                <a href="products/wishlist" class="btn btn-outline-light text-danger me-2" type="submit">
+                    <i class="fa-sharp fa-solid fa-heart text-danger fa-beat"></i>
+                    Wishlist
+                </a>
+                    <!-- cart  -->
+                <a href="products/cart" class="btn btn-outline-light text-danger" type="submit">
+                    <i class="fa-sharp fa-solid fa-cart-shopping text-danger"></i>
+                                        Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">{{cartitem}}</span>
+                </a>
+            </form>
+        </div>
+    </div>
+</nav>

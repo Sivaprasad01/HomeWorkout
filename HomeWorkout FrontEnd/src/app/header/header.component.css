@@ -1,0 +1,33 @@
+.headerr{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 90px;
+}
+.title h1{
+    overflow-y: hidden;
+    position: relative;
+    font-size: 27px;
+
+    
+}
+.title h1 .red{
+        color: #fd0404;
+}
+.title h1 .white{
+    color: white;
+}
+
+.container i{
+    color: rgb(200, 26, 26);
+}
+
+.dropdown{
+    color: white;
+    margin-left: 800px;
+}
+#item{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,186 @@
+<!-- 
+<marquee>
+    <h1>➔   Register    Now    And      start     sculpturing  yourself    with    homeWorkout</h1>
+
+</marquee> -->
+<!-- <app-header></app-header> -->
+
+<mat-horizontal-stepper linear>
+
+    <!-- personal  -->
+
+    <!-- completed boolean attribute -->
+    <mat-step label="Personal Details" >
+       <div class="row">
+        <div class="col-6">
+            <form [formGroup]="registerform"  class="example-form ">
+                <mat-form-field style="width: 450px;" class="example">
+                  <mat-label>What's your name </mat-label>
+                  <input name="name" formControlName="name" matInput placeholder="Name" value="" required>
+                </mat-form-field>                  
+                <div *ngIf="this.registerform.get('name')?.errors && this.registerform.get('name')?.touched" class="ms-3 text-danger"><h3> Invalid Name</h3></div>
+                <br>
+
+                <mat-form-field style="width: 450px;" class="example">
+                    <mat-label>Gender</mat-label>
+                    <input name="gender" formControlName="gender" matInput placeholder="Male | Female | Other" value="" required>
+                  </mat-form-field>                  
+                  <div *ngIf="this.registerform.get('gender')?.errors && this.registerform.get('gender')?.touched" class="ms-3 text-danger"><h3> Invalid Data</h3></div>
+                  <br>
+    
+                <mat-form-field style="width: 450px;" class="example">
+                    <mat-label>How old are you</mat-label>
+                    <input name="age" formControlName="age" matInput placeholder="Age" value="" >
+                  </mat-form-field>
+                  <div *ngIf="this.registerform.get('age')?.errors && this.registerform.get('age')?.touched" class="ms-3 text-danger"><h3> Invalid Age</h3></div>
+                  <br>
+    
+                  <!-- <mat-form-field style="width: 450px;" class="example">
+                    <mat-label>What's your height</mat-label>
+                    <input name="height" formControlName="height" matInput placeholder="Height in cm" value="">
+                  </mat-form-field>
+                  <div *ngIf="this.registerform.get('height')?.errors && this.registerform.get('height')?.touched" class="ms-3 text-danger"><h3> Invalid Height</h3></div>
+
+                  <br>
+    
+                  <mat-form-field style="width: 450px;" class="example">
+                    <mat-label>How much do you weigh</mat-label>
+                    <input name="weight" formControlName="weight" matInput placeholder="Weight in kg" value="">
+                  </mat-form-field>
+                  <div *ngIf="this.registerform.get('weight')?.errors && this.registerform.get('weight')?.touched" class="ms-3 text-danger"><h3> Invalid Weight</h3></div>
+
+                  <br> -->
+    
+
+                  <button type="submit" mat-raised-button matStepperNext color="warn" id="one" >Save & Next</button>
+
+              </form>
+        </div>
+        <div class="col-6 ">
+            <div class="first">
+                <img src="https://c4.wallpaperflare.com/wallpaper/534/963/752/abs-anllela-belly-body-wallpaper-preview.jpg"  alt="">
+            </div>
+        </div>
+       </div> 
+        
+
+
+    
+    </mat-step>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+<!-- Physical Details -->
+
+    <mat-step label="Physical Details" >
+    
+        <div class="row">
+            <div class="col-6 ">
+
+                <form [formGroup]="registerform" class="example-form ">
+
+
+                    <mat-form-field style="width: 450px;" class="example">
+                        <mat-label>What's your height</mat-label>
+                        <input name="height" formControlName="height" matInput placeholder="Height in cm" value="">
+                      </mat-form-field>
+                      <div *ngIf="this.registerform.get('height')?.errors && this.registerform.get('height')?.touched" class="ms-3 text-danger"><h3> Invalid Height</h3></div>
+    
+                      <br>
+        
+                      <mat-form-field style="width: 450px;" class="example">
+                        <mat-label>How much do you weigh</mat-label>
+                        <input name="weight" formControlName="weight" matInput placeholder="Weight in kg" value="">
+                      </mat-form-field>
+                      <div *ngIf="this.registerform.get('weight')?.errors && this.registerform.get('weight')?.touched" class="ms-3 text-danger"><h3> Invalid Weight</h3></div>
+    
+                      <br>
+
+
+                    <!-- <mat-form-field style="width: 450px;" class="example">
+                      <mat-label>Enter your Email </mat-label>
+                      <input name="email" formControlName="email" matInput placeholder="Ex: abc@gmail.com" value="">
+                    </mat-form-field>
+                    <div *ngIf="this.registerform.get('email')?.errors && this.registerform.get('email')?.touched" class="ms-3 text-danger"><h3> Invalid Email</h3></div>
+
+                    <br>
+        
+
+        
+                      <mat-form-field style="width: 450px;" class="example">
+                        <mat-label>Create a password</mat-label>
+                        <input name="password" formControlName="password" matInput placeholder="alphaneumeric suggested" value="">
+                      </mat-form-field>
+                      <div *ngIf="this.registerform.get('password')?.errors && this.registerform.get('password')?.touched" class="ms-3 text-danger"><h3> Invalid Password</h3></div>
+
+                      <br> -->
+        
+    
+                      <button mat-raised-button matStepperPrevious color="warn" id="two">Previous page</button>
+                      <button type="submit" mat-raised-button matStepperNext color="warn" id="twoo">save & next page</button>
+                  </form>
+            </div>
+            <div class="col-6 ">
+                <div class="first">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/305/542/desktop-wallpaper-pose-tattoo-muscle-muscle-tattoo-press-dumbbells-gym-gym-bodybuilder-abs-dumbbells-bodybuilder-section-%D1%81%D0%BF%D0%BE%D1%80%D1%82-bodybuilders.jpg"  alt="">
+
+                </div>
+            </div>
+           </div> 
+    
+
+
+    </mat-step>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Registration  -->
+    <mat-step label="Registration" >
+    <div class="row">
+        <div class="col-6 ">
+            <div class="third">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/235/329/desktop-wallpaper-model-look-pose-abs-fitness-girl-anllela-anllela-sagra.jpg"  alt="">
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <form class="example-form " [formGroup]="registerform" (ngSubmit)="register()">
+                <h3>Please enter your E-mail and create a password </h3>       
+
+                <mat-form-field style="width: 450px;" class="example">
+                  <mat-label>Enter your Email </mat-label>
+                  <input name="email" formControlName="email" matInput placeholder="Ex: abc@gmail.com" value="">
+                </mat-form-field>
+                <div *ngIf="this.registerform.get('email')?.errors && this.registerform.get('email')?.touched" class="ms-3 text-danger"><h3> Invalid Email</h3></div>
+                <br>
+    
+
+    
+                  <mat-form-field style="width: 450px;" class="example">
+                    <mat-label>Create a password</mat-label>
+                    <input name="password" formControlName="password" matInput placeholder="alphaneumeric preffered" value="">
+                  </mat-form-field>
+                  <div *ngIf="this.registerform.get('password')?.errors && this.registerform.get('password')?.touched" class="ms-3 text-danger"><h3> Invalid Password</h3></div>
+                  <br>
+    
+                    <!-- Register Error Message  -->
+                    <div class="text-danger mt-2 fw-bolder">
+                        {{registerErrorMsg}}
+                    </div>
+
+                  <button type="submit" mat-raised-button   color="warn" id="twoo">Get Started</button>
+
+  
+              </form>
+        </div>
+
+       </div> 
+        <button mat-raised-button matStepperPrevious color="warn" id="three">Previous page</button>
+
+    
+    </mat-step>
+
+</mat-horizontal-stepper>
+<!-- <app-footer></app-footer> -->

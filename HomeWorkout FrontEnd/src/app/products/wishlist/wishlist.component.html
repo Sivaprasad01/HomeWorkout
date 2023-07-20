@@ -1,0 +1,63 @@
+<!-- Navigation-->
+<app-header2></app-header2>
+<!-- wishlist without content -->
+<div class="container" *ngIf="allwishlistitem.length==0">
+    <div class="row">
+      <h3 class="text-center fw-bolder mt-2">Your Wishlist is Empty</h3>  
+        <div class="col mt-2 mb-4 d-flex justify-content-center">
+            <!-- cart  -->
+            <img id="empty" src="https://media.tenor.com/UwvQNs9SEaEAAAAC/empty-locket-valentines-day-locket-heart.gif" 
+            style="height: 400px;width: 600px; ;" alt="">
+        </div>
+        <div class="text-center mb-3">
+            <a class="btn btn-outline-dark mt-auto" href="products"> Continue Shopping</a>
+        </div>
+    </div>
+
+                    <!-- superman -->
+        <!-- <div class="col m-4 text-center ">
+            <img src="https://cdn.pixabay.com/animation/2022/11/03/16/39/16-39-41-74_512.gif" 
+            style="height: 480px;width: 950px; ;" alt="">
+        </div> -->
+</div>
+
+<!-- wishlist with content  -->
+<section class="py-5" *ngIf="allwishlistitem.length>=0">
+    <!-- <h2 class="text-center ">wishlist Items</h2> -->
+    <div class="container px-4 px-lg-5 mt-5" >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let wish of allwishlistitem">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" style="width: 300px;height: 300px;" [src]="wish.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{wish.title}}</h5>
+                            <!-- Product price-->
+                            ${{wish.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <!-- <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto" routerLink="viewproducts/:id">
+                                <i class="fa-solid fa-eye"></i> View product</a>
+
+                        </div> -->
+                        <div class="text-center">
+
+                            <a (click)="removewishlistitem(wish.id)" class="btn btn-danger mt-2 fa-beat border"  >
+                                <i class="fa-solid fa-trash "></i> 
+                            </a>
+                            <a (click)="addtocart(wish)" class="btn btn-dark mt-2 ms-3 fa-beat">
+                                <i class="fa-solid fa-cart-plus "></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

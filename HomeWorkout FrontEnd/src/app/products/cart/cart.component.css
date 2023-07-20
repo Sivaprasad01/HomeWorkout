@@ -1,0 +1,45 @@
+h3{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+h4{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+.icon{
+    cursor: pointer;
+}
+.container{
+    min-height: 600px;
+}
+.discount img{
+    height: 100px;
+    box-shadow: 5px 5px 10px black;
+    margin: 6px;
+    border-radius: 30px;
+}
+.discount img:hover{
+    box-shadow: 5px 5px 10px rgb(48, 210, 247);
+    transform: scale(1.020);
+
+}
+
+.enter{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.address p{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 16px;
+}

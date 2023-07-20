@@ -1,0 +1,94 @@
+
+
+h1{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.example-form{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+form button{
+    width: 400px; 
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.first{
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+
+}
+.first img{
+    width: 600px;
+    border-radius: 30px;
+    transition: transform 0.25s;
+}
+.first img:hover{
+    transform: scale(1.1);
+}
+#one{
+    margin-top: 0;
+    margin-left: 25px;
+}
+#one:hover{
+    transform: scale(1.009);
+    box-shadow: 4px 4px 10px black;
+    background-color: red;
+}
+
+#two:hover{
+    transform: scale(1.009);
+    box-shadow: 4px 4px 10px black;
+    background-color: red;
+}
+#twoo:hover{
+    transform: scale(1.009);
+    box-shadow: 4px 4px 10px black;
+    background-color: red;
+}
+#three{
+    margin-left: 250px;
+    margin-top: 20px;
+
+}
+#three:hover{
+    transform: scale(1.009);
+    box-shadow: 4px 4px 10px black;
+    background-color: red;
+}
+#threee{
+    margin-left: 140px;
+}
+#threee:hover{
+    transform: scale(1.009);
+    box-shadow: 4px 4px 10px black;
+    background-color: red;
+}
+.third{
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.third img{
+    width: 600px;
+    border-radius: 30px;
+    transition: transform 0.25s;
+}
+.third img:hover{
+    transform: scale(1.1);
+}
+form h3{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+}

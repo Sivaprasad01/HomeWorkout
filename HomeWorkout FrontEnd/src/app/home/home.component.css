@@ -1,0 +1,118 @@
+*{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.container{
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+
+.card{
+    opacity: 0.9;
+}
+.card #button{
+    opacity: 1;
+}
+.card:hover{
+    opacity:1;
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+.card a{
+opacity: 1;
+}
+
+.card-title{
+    margin-left: 45px;
+    font-size: 30px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+.card-arms .card-title{
+    margin-left: 90px;
+}
+.card-subtitle{
+    margin-left: 110px;
+    font-size: 20px;
+
+}
+
+#button{
+    margin-top: 110px;
+    margin-left: 60px;
+    color: white;
+}
+
+.photo {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  img {
+    transition: transform 0.25s;
+  }
+  
+  .photo:hover img {
+    transform: scale(1.1);
+  }
+
+ 
+  .discover:hover{
+
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+.discover h1{
+    font-size: 40px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 50px;
+    color: black;
+    font-weight: bolder;
+
+}
+
+#go{
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 130px;
+
+}
+#go:hover{
+    box-shadow: 3px 3px 10px black;
+    background-color: rgb(243, 33, 33);
+    
+}
+.shop{
+    height: 300px;
+    margin-top: 35px;
+    margin-left: 50px;
+    border-radius: 20px;
+    font-weight: 1400px;
+    background-image: url('https://blog.daraz.com.bd/wp-content/uploads/2019/11/fitness-equipment-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+  .shop:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+.shop h1{
+    font-size: 40px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 40px;
+    padding-top: 50px;
+    font-weight: bolder;
+    color: white;
+
+}

@@ -1,0 +1,89 @@
+<!-- <p>all-products works!</p> -->
+
+
+<!-- Navigation-->
+<app-header2></app-header2>
+
+
+<!-- carousal -->
+<div id="carouselExampleInterval" class="carousel slide mt-1 mb-1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="https://i.postimg.cc/nh07rMJJ/Screenshot-2023-06-05-150601.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://i.postimg.cc/T2VKhhV4/Screenshot-2023-06-05-150712.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.postimg.cc/fLhwhjrT/Screenshot-2023-06-05-150829.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+  <div class="row images">
+
+    <div class="col-5">
+       <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-aim-higher-squat-lower-gym-motivation-t-shirt-design-png-image_233129.png" class="logo" alt="">
+    </div>
+
+    <div class="col-7">
+      <img src="https://i.postimg.cc/5yDkd5Vy/Gym-Transparent-Images-PNG.png"  alt="">
+  </div>
+
+  </div>
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let product of allProducts | filter:searchTerm:'title' ">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" [src]="product.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center title">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder"> {{product.title}}</h5>
+                            <!-- Product price-->
+                            <div>
+                              <h5 id="price"><b style="padding-top: 50px;">₹ </b>{{product.price}}</h5> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto" routerLink="viewproducts/{{product.id}}">
+                                <i class="fa-solid fa-eye"></i> View product</a>
+
+                        </div>
+                        <div class="text-center">
+
+
+                            <!-- <a  routerLink="wishlist" class="btn btn-danger mt-2  border" >
+                                <i class="fa-solid fa-heart "></i> 
+                            </a> -->
+                            <a (click)="addtocart(product)" class="btn btn-outline-dark mt-2  " >
+                               Add To Cart <i class="fa-solid fa-cart-plus "></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>

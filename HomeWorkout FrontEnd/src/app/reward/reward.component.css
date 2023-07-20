@@ -1,0 +1,39 @@
+.wrapper{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('https://p4.wallpaperbetter.com/wallpaper/816/931/806/women-pose-workout-fitness-wallpaper-preview.jpg'); */
+    background-image: url('https://rare-gallery.com/uploads/posts/877112-Fitness-Men-Gym-Stretch-exercise-Workout-Shoe-sole.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -120px;
+    margin-top: 0;
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+
+ .wrap {
+ padding-top: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+
+
+}
+
+h1{
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    color: yellow;
+}
+b{
+    color: white;
+}
+button:hover{
+    box-shadow: 5px 5px 10px gray;
+    
+}

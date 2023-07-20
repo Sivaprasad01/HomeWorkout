@@ -1,0 +1,79 @@
+
+.headerr{
+    background-color: black;
+    height: 70px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+.banner{
+    background-image: url('https://t4.ftcdn.net/jpg/04/08/48/47/360_F_408484730_DjrBuJyKOkuz2QTqr3Kf55I891VKj9On.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    height: 500px;
+
+}
+
+.card img{
+    transition: 1s;
+    height: 280px;
+    width: 100%;
+    padding:20px ;
+}
+.card img:hover{
+    transition: 2s;
+    transform: scale(0.8);
+}
+.card:hover{
+    box-shadow: 5px 12px 15px  rgb(117, 116, 116);
+    transition: 1s;
+    transform: scale(1.00008);
+}
+
+.title h5{
+    font-size: 16px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+}
+#price{
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 30px;
+    color: black;
+}
+#price b{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 30px;
+    color: red;
+}
+h1{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: black;
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+
+#carouselExampleInterval{
+    z-index: -1;
+}
+.images{
+    height: 425px;
+    top: 0;
+}
+.logo{
+    margin-left: 210px;
+    margin-top: 90px;
+}
+
+
+
+

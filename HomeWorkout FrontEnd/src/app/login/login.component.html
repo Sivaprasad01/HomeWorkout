@@ -1,0 +1,105 @@
+<!-- <video autoplay muted loop id="myVideo">
+    <source src="./login bg.mp4" type="video/mp4">
+  </video> -->
+
+    <!-- <section id="vid-parent">
+        <vg-player>
+            <video autoplay muted loop id="myVideo">
+                <source src="./video/login bg.mp4" type="video/mp4">
+            </video>
+        </vg-player>
+
+
+    </section> -->
+
+
+
+
+
+
+
+<div class="whole">
+<div class="card">
+  <div class="card-body">
+
+    <h1 class="text-light text-center fa-fade me-5">LOGIN</h1>
+
+        <form class="example-form " [formGroup]="loginform" (ngSubmit)="login()">
+
+          <mat-form-field style="width: 450px;" class="example">
+            <mat-label>Enter your Email </mat-label>
+            <input name="email" formControlName="email" matInput placeholder="Ex: abc@gmail.com" value="">
+          </mat-form-field>
+          <div *ngIf="this.loginform.get('email')?.errors && this.loginform.get('email')?.touched" class="ms-3 text-danger"><h3> Invalid Email</h3></div>
+          <br>
+
+
+
+            <mat-form-field style="width: 450px;" class="example">
+              <mat-label>Create a password</mat-label>
+              <input name="password" formControlName="password" type="password" matInput placeholder="Try to Remember" value="">
+            </mat-form-field>
+            <div *ngIf="this.loginform.get('password')?.errors && this.loginform.get('password')?.touched" class="ms-3 text-danger"><h3> Invalid Password</h3></div>
+            <br>
+
+              <!-- login Error Message  -->
+              <div class="text-danger mt-1 mb-2 fw-bolder">
+                  {{loginErrorMsg}}
+              </div>
+
+            <button type="submit" mat-raised-button id="one"  >Login & Shred</button>
+
+
+        </form>
+  </div>
+</div>
+</div>
+
+
+<!-- <app-footer></app-footer> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="video-player-wrapper">
+        <vg-player>
+
+          <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" >
+            <source src="./video/login bg.mp4" type="video/mp4">
+
+          </video>
+        </vg-player>
+      </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

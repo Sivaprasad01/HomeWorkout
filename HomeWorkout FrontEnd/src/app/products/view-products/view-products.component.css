@@ -1,0 +1,21 @@
+ 
+ 
+ 
+ img{
+    transition: 2s;
+    padding:20px ;
+}
+ img:hover{
+    transition: 2s;
+    transform: scale(1.09);
+}
+
+.title{
+    font-size: 35px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;   
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+

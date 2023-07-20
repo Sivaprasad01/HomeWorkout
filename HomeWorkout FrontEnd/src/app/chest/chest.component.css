@@ -1,0 +1,32 @@
+iframe{
+    border-radius: 10px;
+    
+}
+h2{
+    font-size: 40px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+}
+h3{
+    font-size: 35px;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    color: red;
+    margin-top: 40px;
+}
+.begin{
+    width: 100%;
+    height: 400px;
+    background-image: url('https://i.postimg.cc/1XRy8GDm/Screenshot-2023-06-07-132016.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#begin{
+    margin-left: 1080px;
+    margin-top: 280px;
+}
+#begin:hover{
+    box-shadow: 3px 3px 10px black;
+    background-color: rgb(243, 33, 33);
+    
+}

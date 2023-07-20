@@ -1,0 +1,28 @@
+h3{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+h2{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size:40px;
+}
+.card img{
+    transition: 1s;
+    height: 280px;
+    width: 100%;
+    padding:20px ;
+}
+.card img:hover{
+    transition: 2s;
+    transform: scale(0.8);
+}
+.card:hover{
+    box-shadow: 5px 12px 15px  rgb(117, 116, 116);
+    transition: 1s;
+    transform: scale(1.00008);
+}

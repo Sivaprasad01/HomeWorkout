@@ -1,0 +1,63 @@
+.wrapper{
+    max-height: 220px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+iframe{
+    margin: 20px;
+}
+.card{
+    min-width: 400px;
+    height: 200px;
+    margin-left: 20px;
+    padding: 25px;
+}
+.card h3{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bolder;
+}
+h2{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 25px; 
+    color: red;
+}
+.card-title{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 20px; 
+    color: white;
+}
+.card-text{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 20px; 
+    color: white;
+}
+ h4,h3{
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 25px; 
+}
+@media screen and (min-width: 676px) {
+    .modal-dialog {
+      max-width: 900px; /* New width for default modal */
+    }
+}
+.card:hover{
+    box-shadow: 5px 5px 15px black;
+}
+
+
+.challengecard1{
+    background: linear-gradient(135deg, rgb(246, 73, 73), rgb(37, 37, 247));
+}
+.challengecard2{
+    background: linear-gradient(135deg, rgb(15, 15, 252), rgb(12, 219, 250),rgb(136, 0, 255));
+}
+
